@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive SASS grid example</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/example.css?v=1.0">
+
+</head>
+
+<body>
+	<div class="container fluid">
+	  <div class="row break-sm">
+		<div class="col-6 order-2">Content</div>
+		<div class="col-3 order-1">Aside 1</div>
+		<div class="col-3 order-3">Aside 2</div>
+	  </div>
+	</div>
+
+	<div class="container">
+	  <div class="row grid-gallery break-sm">
+		  <div class="col-12">ELEMENT</div>
+		  <div class="col-3">ELEMENT</div>
+		  <div class="col-3">ELEMENT</div>
+		  <div class="col-3">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+		  <div class="col-gallery">ELEMENT</div>
+	  </div>
+
+	  <div class="row grid-center break-sm">
+		  <div class="col-3">ELEMENT</div>
+		  <div class="col-3">ELEMENT</div>
+		  <div class="col-3">ELEMENT</div>
+	  </div>
+	  
+	  <div class="row grid-gallery">
+		<div class="col-gallery hidden-lg-up">ELEMENT 1</div>
+		<div class="col-gallery hidden-lg-down">ELEMENT 2</div>
+		<div class="col-gallery hidden-sm-down">ELEMENT 3</div>
+	  </div>
+	</div>
+</body>
+</html>

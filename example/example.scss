@@ -1,0 +1,24 @@
+@import "../src/grid.scss";
+
+//=========================================
+//Styling of grid for demostration purposes
+//=========================================
+body{
+  background-color: lightgrey;
+}
+.container {
+  [class*='col-'] {
+      height: 50px;
+      display: flex;
+      justify-content: space-around;  //  align horiz
+      align-items: center;            //  align vert
+  }
+}
+
+//  random color generator
+@for $i from 1 through $grid__cols {
+  [class*='col-']:nth-child(#{$i}){
+      background-color: rgb(random(255),random(255),random(255));
+  }
+
+}
